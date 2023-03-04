@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple Weather</title>
+
+  <script src="moment.min.js"></script>
+  <script src="plotly-latest.min.js"></script>
+
+  <script src="wxmap_functions.js"></script>
+</head>
+<body onload="currentObservation('KNUQ'); forecast(37.4141, -122.0482)" style="background-color:black">
+
+  <script>initLocationData()</script>
+
+  <div id="currentDiv" style="color:white; font-family:Arial; font-size:13px; height:20px"></div>
+  <div id="wxmapDiv"></div><br>
+  <div id="plotProgress" style="color:gray; font-family:Arial; font-size:11px; height:17px"></div>
+  <div id="buttons">
+    <input type="button" id="smoothButton" value="unsmooth" onclick="smoothToggle(this)"><br><br>
+    <input type="button" onclick="currentObservation('KFAF'); forecast(37.132601, -76.6089303)" value="Felker">
+    <input type="button" onclick="currentObservation('KNUQ'); forecast(37.4141, -122.0482)" value="Moffett">
+    <input type="button" onclick="currentObservation('KRTS'); forecast(39.668, -119.876)" value="Reno">
+    <input type="button" onclick="currentObservation('KNYL'); forecast(32.86, -114.396667)" value="Yuma">
+    <input type="button" onclick="currentObservation('PABR'); forecast(71.2906, -156.7886)" value="Barrow">
+    <input type="button" onclick="currentObservation('PHNL'); forecast(21.3245, -157.9251)" value="Honolulu">
+    <input type="button" onclick="currentObservation('KPDX'); forecast(45.588611, -122.5975)" value="Portland">
+  </div><br>
+</body>
+</html>

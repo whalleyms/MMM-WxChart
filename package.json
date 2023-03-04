@@ -1,0 +1,12 @@
+{
+  "name": "mmm-wxchart",
+  "version": "1.0.0",
+  "description": "A Solar Module for MagicMirror2 designed to integrate with an Enphase Solar System",
+  "main": "MMM-WxChart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
